@@ -46,7 +46,7 @@ class DashboardScreen extends StatelessWidget{
                     return Card(
                       child: ListTile(
                         title: Text(task.title),
-                        subtitle: Text('\${task.category} | \${task.starTime.hour}:\${task.startTime.minute}'),
+                          subtitle: Text('${task.category} | ${task.startTime.hour}:${task.startTime.minute}'),
                         trailing: IconButton(icon: const Icon(Icons.delete, color: Colors.red), onPressed: () => scheduleProvider.removeTask(task.id),
                       )
                       )

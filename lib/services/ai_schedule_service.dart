@@ -15,7 +15,7 @@ class AiScheduleService extends ChangeNotifier {
 
   ScheduleAnalysis? get currentAnalysis => _currentAnalysis;
 
-  bool get isLoading => isLoading;
+  bool get isLoading => _isLoading;
 
   String? get errorMessage => _errorMessage;
 
